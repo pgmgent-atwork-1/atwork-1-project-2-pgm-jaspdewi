@@ -36,6 +36,48 @@ label {
 ul.no-bullets {
   list-style-type: none;
 }
+/* header css */
+.upper__header {
+height: 26.7756rem;
+padding: 1.5rem;
+}
+
+.background01 {
+  background: #000000 url(../media/images/Gentse-feesten-01.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background02 {
+  background: #000000 url(../media/images/Gentse-feesten-02.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background03 {
+  background: #000000 url(../media/images/Gentse-feesten-03.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background04 {
+  background: #000000 url(../media/images/Gentse-feesten-04.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background05 {
+  background: #000000 url(../media/images/Gentse-feesten-05.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background06 {
+  background: #000000 url(../media/images/Gentse-feesten-06.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background07 {
+  background: #000000 url(../media/images/Gentse-feesten-07.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background08 {
+  background: #000000 url(../media/images/Gentse-feesten-08.jpg) 35% center no-repeat;
+  background-size: cover;
+}
+.background09 {
+  background: #000000 url(../media/images/Gentse-feesten-09.jpg) 35% center no-repeat;
+  background-size: cover;
+}
 
 /* footer css */
 section.upper__footer {
