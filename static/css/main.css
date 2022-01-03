@@ -36,47 +36,331 @@ label {
 ul.no-bullets {
   list-style-type: none;
 }
+
 /* header css */
+/* upper part of header */
 .upper__header {
-height: 26.7756rem;
-padding: 1.5rem;
+  box-sizing: border-box;
+  height: 75vh;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media(min-width: 80rem) {
+  .upper__header {
+    height: 90vh;
+  }
 }
 
 .background01 {
-  background: #000000 url(../media/images/Gentse-feesten-01.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-01.jpg) no-repeat;
 }
+
 .background02 {
-  background: #000000 url(../media/images/Gentse-feesten-02.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-02.jpg)no-repeat;
 }
+
 .background03 {
-  background: #000000 url(../media/images/Gentse-feesten-03.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-03.jpg)no-repeat;
 }
+
 .background04 {
-  background: #000000 url(../media/images/Gentse-feesten-04.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-04.jpg)no-repeat;
 }
+
 .background05 {
-  background: #000000 url(../media/images/Gentse-feesten-05.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-05.jpg) no-repeat;
 }
+
 .background06 {
-  background: #000000 url(../media/images/Gentse-feesten-06.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-06.jpg) no-repeat;
 }
+
 .background07 {
-  background: #000000 url(../media/images/Gentse-feesten-07.jpg) 35% center no-repeat;
-  background-size: cover;
+  background: #000000 url(../media/images/Gentse-feesten-07.jpg) no-repeat;
 }
+
 .background08 {
-  background: #000000 url(../media/images/Gentse-feesten-08.jpg) 35% center no-repeat;
+  background: #000000 url(../media/images/Gentse-feesten-08.jpg) no-repeat;
+}
+
+.background09 {
+  background: #000000 url(../media/images/Gentse-feesten-09.jpg) no-repeat;
+}
+
+.background {
+  background-position: 35% center;
   background-size: cover;
 }
-.background09 {
-  background: #000000 url(../media/images/Gentse-feesten-09.jpg) 35% center no-repeat;
-  background-size: cover;
+
+@media(min-width: 80rem) {
+  .background {
+    background-position: 50% center;
+  }
+}
+
+.upper__header--logo {
+  width: 11.25rem;
+}
+
+@media(min-width: 48rem) {
+  .upper__header--logo {
+    width: 17.5rem;
+  }
+}
+
+.upper__header--burger-menu {
+  background: none;
+  border: none;
+}
+
+@media(min-width: 80rem) {
+  .upper__header--burger-menu {
+    display: none;
+  }
+}
+
+.upper__header--burger-menu>svg {
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.upper__header--full-menu {
+  width: 35.5rem;
+}
+
+@media(max-width: 79.999rem) {
+  .upper__header--full-menu {
+    display: none;
+  }
+}
+
+.full-menu--upper-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-menu__searchbar {
+  display: flex;
+}
+
+.full-menu__searchbar--input {
+  box-sizing: border-box;
+  width: 21.25rem;
+  height: 2.75rem;
+  font-family: 'Raleway';
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0 5rem 0 1rem;
+  border: none;
+}
+
+.full-menu__searchbar--search-button {
+  border: none;
+  padding: 1.375rem 2.875rem;
+  background: #000000 url(../media/icons/search.svg) center no-repeat;
+}
+
+.full-menu__language-select {
+  border: none;
+  font-family: 'Raleway SemiBold';
+  color: #FFFFFF;
+  background-color: #000000;
+  font-size: 1rem;
+}
+
+.full-menu__links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.menu-links {
+  padding: 0 1.375rem;
+  font-family: 'Raleway Bold';
+  font-size: 1.188rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.current-page
+
+
+/* lower part of header */
+.lower__header--subtitle {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width: 80rem) and (max-height: 56.25rem) {
+.lower__header--subtitle {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: calc(15% + 12rem);
+  right: 0;
+}
+}
+@media(min-width: 80rem) and (min-height: 56.26rem) {
+  .lower__header--subtitle {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: calc(15% + 28.125rem);
+    right: 0;
+  }
+  }
+
+.lower__header--svg-small {
+  height: 1.625rem;
+  margin: 0 0 0.625rem;
+}
+@media(min-width: 80rem) {
+  .lower__header--svg-small {
+    width: 7rem;
+    transform: rotate(-90deg);
+    padding-left: 1.5rem;
+  }
+}
+
+.lower__header--svg-large {
+  width: 16.25rem;
+}
+@media(min-width: 80rem) {
+  .lower__header--svg-large {
+    width: 25rem;
+  }
+}
+
+.lower__header--svg {
+  fill: #000000;
+}
+@media(min-width: 80rem) {
+  .lower__header--svg {
+    fill: #FFFFFF;
+  }
+}
+
+.lower__header--calendar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(min-width: 48rem) {
+  .lower__header--calendar {
+    flex-wrap: nowrap;
+  }
+}
+
+@media(min-width: 80rem) and (max-height: 56.25rem) {
+  .lower__header--calendar {
+    flex-wrap: wrap;
+    width: 37.5rem;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+  }
+}
+@media(min-width: 80rem) and (min-height: 56.26rem) {
+  .lower__header--calendar {
+    flex-wrap: wrap;
+    width: 18.75rem;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+  }
+}
+
+.lower__header--calendar>li {
+  width: 20%;
+  padding-top: 20%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media(min-width: 48rem) {
+  .lower__header--calendar>li {
+    width: 10%;
+    padding-top: 10%;
+  }
+}
+
+@media(min-width: 80rem) and (max-height: 56.25rem) {
+  .lower__header--calendar>li {
+    width: 20%;
+    padding-top: 16%;
+  }
+}
+@media(min-width: 80rem) and (min-height: 56.26rem) {
+  .lower__header--calendar>li {
+    width: 50%;
+    padding-top: 30%;
+  }
+}
+
+.calendar--link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(min-width: 80rem) {
+  .calendar--link {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+
+.calendar--link:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+@media(min-width: 80rem) {
+  .calendar--link:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+}
+
+.calendar--link>p {
+  margin: 0;
+}
+
+.calendar--day-abbrev {
+  font-family: 'Raleway Bold';
+}
+
+@media(min-width: 36rem) {
+  .calendar--day-abbrev {
+    font-size: 1.625rem;
+  }
+}
+
+.calendar--day-numerical {
+  font-size: 0.813rem;
+}
+
+@media(min-width: 36rem) {
+  .calendar--day-numerical {
+    font-size: 1.125rem;
+  }
 }
 
 /* footer css */
@@ -91,7 +375,7 @@ section.footer__email-input {
   position: relative;
 }
 
-section.footer__email-input > input {
+section.footer__email-input>input {
   width: calc(100% - 2rem);
   max-width: 50rem;
   height: 3.5rem;
@@ -100,12 +384,13 @@ section.footer__email-input > input {
   background-color: #e9e9e9;
   border: none;
 }
-section.footer__email-input > input:focus {
+
+section.footer__email-input>input:focus {
   outline: 2px dotted #ff0000;
   outline-offset: -2px;
 }
 
-button {
+section.footer__email-input>button {
   font-family: 'Raleway SemiBold';
   font-size: 1.125rem;
   color: #FFFFFF;
@@ -115,8 +400,9 @@ button {
   padding: 0.938rem 1.875rem;
   margin-top: 1.25rem;
 }
-@media(min-width: 36rem){
-  button  {
+
+@media(min-width: 36rem) {
+  section.footer__email-input>button {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -134,12 +420,14 @@ section.lower__footer {
   background-size: cover;
   padding-bottom: 2.5rem;
 }
-@media(min-width: 80rem){
+
+@media(min-width: 80rem) {
   section.lower__footer {
     background-position-x: -40%;
     padding-bottom: 10rem;
   }
 }
+
 section.lower__footer--content {
   display: flex;
   flex-direction: column;
@@ -156,6 +444,7 @@ section.lower__footer--content>img {
   padding: 2.25rem;
   margin: 0;
 }
+
 @media(min-width: 48rem) {
   section.lower__footer--content>img {
     width: 22rem;
@@ -163,7 +452,7 @@ section.lower__footer--content>img {
 }
 
 section.footer__flexbox>p {
-  font-family:'Raleway Bold';
+  font-family: 'Raleway Bold';
   font-size: 1.25rem;
   color: #FFFFFF;
   line-height: 1.2;
@@ -171,7 +460,8 @@ section.footer__flexbox>p {
   width: 28.125rem;
   max-width: 100%;
 }
-@media(min-width: 48rem){
+
+@media(min-width: 48rem) {
   section.footer__flexbox>p {
     font-size: 1.5rem;
   }
@@ -189,7 +479,7 @@ section.footer__flexbox>p {
   background-color: #FFFFFF;
   border-radius: 50%;
   margin-right: 1rem;
-  
+
 }
 
 a.footer__list {

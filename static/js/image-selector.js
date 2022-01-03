@@ -25,10 +25,6 @@
       const header = document.getElementById('needsRandomBackground');
       header.classList.add(`background0${randomizer + 1}`);
 
-      // // adds correct image to the randomized number
-      // const chosenImage = `<img src="${imageLinks[randomizer]}" alt="Gentse Feesten header ${randomizer + 1}">`;
-      // // adds randomized image to the HTML
-      // this.$randomImage.innerHTML = chosenImage;
     }
   };
   app.init();
