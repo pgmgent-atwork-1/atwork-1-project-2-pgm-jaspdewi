@@ -15,14 +15,37 @@
             <img src="static/media/images/Gentse-feesten-adapted-logo-with-date.svg" alt="logo Gentse feesten"
                 class="upper__header--logo">
             <!-- hamburger-menu only visible on < 80rem -->
-            <button class="upper__header--burger-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 180">
-                    <g fill="#fff" fill-rule="nonzero">
-                        <path
-                            d="M195.282 75H61.718C53.593 75 47 81.72 47 90c0 8.28 6.595 15 14.718 15h133.564C203.407 105 210 98.28 210 90c0-8.28-6.593-15-14.718-15zM194.273 150H14.727C6.597 150 0 156.72 0 165c0 8.28 6.598 15 14.727 15h179.546c8.13 0 14.727-6.72 14.727-15 .001-8.28-6.597-15-14.727-15zM194.273 0H14.727C6.597 0 0 6.72 0 15c0 8.28 6.598 15 14.727 15h179.546C202.403 30 209 23.28 209 15c.001-8.28-6.597-15-14.727-15z" />
-                    </g>
-                </svg>
-            </button>
+            <nav>
+                <button class="upper__header--burger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 180">
+                        <g fill="#fff" fill-rule="nonzero">
+                            <path
+                                d="M195.282 75H61.718C53.593 75 47 81.72 47 90c0 8.28 6.595 15 14.718 15h133.564C203.407 105 210 98.28 210 90c0-8.28-6.593-15-14.718-15zM194.273 150H14.727C6.597 150 0 156.72 0 165c0 8.28 6.598 15 14.727 15h179.546c8.13 0 14.727-6.72 14.727-15 .001-8.28-6.597-15-14.727-15zM194.273 0H14.727C6.597 0 0 6.72 0 15c0 8.28 6.598 15 14.727 15h179.546C202.403 30 209 23.28 209 15c.001-8.28-6.597-15-14.727-15z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <ul class="no-bullets burger-menu__inside">
+                    <button class="burger-menu__inside--button">
+                        <img src="static/media/icons/cross.svg" alt="cross">
+                    </button>
+                    <li>
+                        <a href="index.html" class="burger-menu__inside--links">Home</a>
+                    </li>
+                    <li>
+                        <a href="evenementen/search.html" class="burger-menu__inside--links"> <img src="static/media/icons/search.svg" alt="search icon">Zoeken</a>
+                    </li>
+                    <li>
+                        <a href="evenementen/dag.html" class="burger-menu__inside--links">Programma</a>
+                    </li>
+                    <li>
+                        <a href="news.html" class="burger-menu__inside--links">Nieuws</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="burger-menu__inside--links">Info</a>
+                    </li>
+                </ul>
+            </nav>
             <!-- full menu only visible on > 80rem -->
             <section class="upper__header--full-menu">
                 <section class="full-menu--upper-part">
@@ -268,5 +291,6 @@
 
     </footer>
     <script src="static/js/image-selector.js"></script>
+    <script src="static/js/hamburger-menu__open&close.js"></script>
 </body>
 </html>
