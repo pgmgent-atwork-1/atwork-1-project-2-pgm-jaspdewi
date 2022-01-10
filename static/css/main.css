@@ -6,31 +6,15 @@ html {
   font-stretch: normal;
 }
 
-.weight400 {
-  font-weight: 400;
-}
-
-.weight600 {
-  font-weight: 600;
-}
-
-.weight700 {
-  font-weight: 700;
-}
-
-.weight900 {
-  font-weight: 900;
-}
-
 body {
   margin: 0;
 }
 
-section.all-padding {
+.all-padding {
   padding: 1.5rem;
 }
 
-section.side-padding {
+.side-padding {
   padding: 0 1.5rem;
 }
 
@@ -52,6 +36,18 @@ label {
 ul.no-bullets {
   list-style-type: none;
 }
+
+.focus-effect:focus {
+  outline: 2px dotted #ff0000;
+  outline-offset: -2px;
+}
+
+.focus-effect--circle:focus {
+  outline: 2px dotted #ff0000;
+  border-radius: 50%;
+  outline-offset: -2px;
+}
+
 
 /* header css */
 /* upper part of header */
@@ -169,6 +165,7 @@ ul.no-bullets {
 .burger-menu-inside__links {
   padding: 0;
   font-size: 1.5rem;
+  font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -181,9 +178,10 @@ ul.no-bullets {
   margin-right: 1rem;
 }
 
-.burger-menu__inside--program-button {
+.burger-menu-inside__program-button {
   cursor: pointer;
   font-size: 1.5rem;
+  font-weight: 700;
   color: #FFFFFF;
   background-color: #000000;
   border: none;
@@ -191,10 +189,10 @@ ul.no-bullets {
   display: flex;
   align-items: center;
 }
-.burger-menu__inside--program-button:hover {
+.burger-menu-inside__program-button:hover {
   text-decoration: underline;
 }
-.burger-menu__inside--program-button > svg {
+.burger-menu-inside__program-button > svg {
   fill: #FFFFFF;
 }
 
@@ -252,12 +250,14 @@ ul.no-bullets {
   width: 21.25rem;
   height: 2.75rem;
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 0;
   padding: 0 5rem 0 1rem;
   border: none;
 }
 
 .full-menu-searchbar__search-button {
+  cursor: pointer;
   border: none;
   padding: 1.375rem 2.875rem;
   background: #000000 url(../media/icons/search.svg) center no-repeat;
@@ -268,6 +268,7 @@ ul.no-bullets {
   color: #FFFFFF;
   background-color: #000000;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .full-menu__links {
@@ -275,12 +276,33 @@ ul.no-bullets {
   justify-content: flex-end;
   padding: 0;
 }
+.full-menu__links > li {
+  padding: 0 1.375rem;
+}
 
 .menu-links {
-  padding: 0 1.375rem;
   font-size: 1.188rem;
+  font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.menu-links:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 1.75rem;
+  height: 4px;
+  background: #FFFFFF;
+}
+
+.current-page::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 1.75rem;
+  height: 4px;
+  background: #FFFFFF;
 }
 
 /* lower part of header */
@@ -436,7 +458,7 @@ ul.no-bullets {
 }
 
 .calendar__day-abbrev {
-
+  font-weight: 700;
 }
 
 @media(min-width: 36rem) {
@@ -456,18 +478,21 @@ ul.no-bullets {
 }
 
 /* footer css */
-section.upper-footer {
+.upper-footer {
   margin: 8rem auto 2rem;
   width: calc(100% - 3rem);
   max-width: 50rem;
 }
 
-section.footer__email-input {
+label {
+  font-weight: 400;
+}
+.footer__email-input {
   width: 100%;
   position: relative;
 }
 
-section.footer__email-input>input {
+.footer__email-input>input {
   width: calc(100% - 2rem);
   max-width: 50rem;
   height: 3.5rem;
@@ -477,13 +502,9 @@ section.footer__email-input>input {
   border: none;
 }
 
-section.footer__email-input>input:focus {
-  outline: 2px dotted #ff0000;
-  outline-offset: -2px;
-}
-
-section.footer__email-input>button {
+.footer__email-input>button {
   font-size: 1.125rem;
+  font-weight: 600;
   color: #FFFFFF;
   background-color: #000000;
   border: none;
@@ -493,7 +514,7 @@ section.footer__email-input>button {
 }
 
 @media(min-width: 36rem) {
-  section.footer__email-input>button {
+  .footer__email-input>button {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -505,7 +526,7 @@ p>a {
   color: #000000;
 }
 
-section.lower-footer {
+.lower-footer {
   height: 27.5rem;
   background: #000000 url(../media/images/Gentse-feesten-01.jpg) 40% center no-repeat;
   background-size: cover;
@@ -513,13 +534,13 @@ section.lower-footer {
 }
 
 @media(min-width: 80rem) {
-  section.lower-footer {
+  .lower-footer {
     background-position-x: -40%;
     padding-bottom: 10rem;
   }
 }
 
-section.lower-footer__content {
+.lower-footer__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -528,22 +549,20 @@ section.lower-footer__content {
   margin: 0 auto;
 }
 
-section.lower-footer__content>img {
-  display: block;
-  box-sizing: border-box;
-  width: 15.75rem;
-  padding: 2.25rem;
-  margin: 0;
+.lower-footer__logo {
+  width: 11.25rem;
+  margin: 2.25rem;
 }
 
 @media(min-width: 48rem) {
-  section.lower-footer__content>img {
-    width: 22rem;
+  .lower-footer__logo {
+    width: 17.5rem;
   }
 }
 
-section.footer__flexbox>p {
+.footer__flexbox>p {
   font-size: 1.25rem;
+  font-weight: 700;
   color: #FFFFFF;
   line-height: 1.2;
   margin: 0;
@@ -552,7 +571,7 @@ section.footer__flexbox>p {
 }
 
 @media(min-width: 48rem) {
-  section.footer__flexbox>p {
+  .footer__flexbox>p {
     font-size: 1.5rem;
   }
 }
