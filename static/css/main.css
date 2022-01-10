@@ -55,7 +55,7 @@ ul.no-bullets {
 
 /* header css */
 /* upper part of header */
-.upper__header {
+.upper-header {
   box-sizing: border-box;
   height: 75vh;
   padding: 1.5rem;
@@ -65,7 +65,7 @@ ul.no-bullets {
 }
 
 @media(min-width: 80rem) {
-  .upper__header {
+  .upper-header {
     height: 90vh;
   }
 }
@@ -109,35 +109,35 @@ ul.no-bullets {
   }
 }
 
-.upper__header--logo {
+.upper-header__logo {
   width: 11.25rem;
 }
 
 @media(min-width: 48rem) {
-  .upper__header--logo {
+  .upper-header__logo {
     width: 17.5rem;
   }
 }
 
 /* burger-menu */
-.upper__header--burger-menu {
+.upper-header__burger-menu {
   background: none;
   border: none;
   cursor: pointer;
 }
 
 @media(min-width: 80rem) {
-  .upper__header--burger-menu {
+  .upper-header__burger-menu {
     display: none;
   }
 }
 
-.upper__header--burger-menu>svg {
+.upper-header__burger-menu>svg {
   width: 2rem;
   padding: 0.5rem;
 }
 
-.burger-menu__inside {
+.burger-menu-inside {
   background: #000000;
   margin: 0;
   padding: 2rem;
@@ -150,7 +150,7 @@ ul.no-bullets {
   display: none;
 }
 
-.burger-menu__inside--button {
+.burger-menu-inside__button {
   position: absolute;
   margin: 0;
   padding: 0 0.375rem;
@@ -162,21 +162,21 @@ ul.no-bullets {
   right: 0%;
   cursor: pointer;
 }
-.burger-menu__inside--button > img {
+.burger-menu-inside__button > img {
   width: 2.5rem;
 }
 
-.burger-menu__inside--links {
+.burger-menu-inside__links {
   padding: 0;
   font-size: 1.5rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-.burger-menu__inside--links:hover {
+.burger-menu-inside__links:hover {
   text-decoration: underline;
 }
 
-.burger-menu__inside--links>img {
+.burger-menu-inside__links>img {
   width: 1.625rem;
   margin-right: 1rem;
 }
@@ -199,55 +199,55 @@ ul.no-bullets {
 }
 
 
-.burger-menu__inside--day-menu {
+.burger-menu-inside__day-menu {
   border-left: 3px solid #FFFFFF;
   padding-left: 1.5rem;
   display: none;
 }
-.burger-menu__inside--day-menu > li{
+.burger-menu-inside__day-menu > li{
   margin: 1rem 0;
 }
 
-.burger-menu__inside--day-links {
+.burger-menu-inside__day-links {
   color: #FFFFFF;
   text-decoration: none;
 }
-.burger-menu__inside--day-links:hover {
+.burger-menu-inside__day-links:hover {
   text-decoration: underline;
 }
 
-.burger-menu__inside--visible {
+.burger-menu-inside__visible {
   display: block;
 }
 
-.chevron--down {
+.chevron-down {
   transform: rotate(0deg);
 }
-.chevron--up {
+.chevron-up {
   transform: rotate(180deg);
 }
 
 /* full menu */
-.upper__header--full-menu {
+.upper-header__full-menu {
   width: 35.5rem;
 }
 
 @media(max-width: 79.999rem) {
-  .upper__header--full-menu {
+  .upper-header__full-menu {
     display: none;
   }
 }
 
-.full-menu--upper-part {
+.full-menu__upper-part {
   display: flex;
   justify-content: space-between;
 }
 
-.full-menu__searchbar {
+.full-menu-searchbar {
   display: flex;
 }
 
-.full-menu__searchbar--input {
+.full-menu-searchbar__input {
   box-sizing: border-box;
   width: 21.25rem;
   height: 2.75rem;
@@ -257,7 +257,7 @@ ul.no-bullets {
   border: none;
 }
 
-.full-menu__searchbar--search-button {
+.full-menu-searchbar__search-button {
   border: none;
   padding: 1.375rem 2.875rem;
   background: #000000 url(../media/icons/search.svg) center no-repeat;
@@ -284,13 +284,13 @@ ul.no-bullets {
 }
 
 /* lower part of header */
-.lower__header--subtitle {
+.lower-header__subtitle {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 @media(min-width: 80rem) and (max-height: 56.25rem) {
-.lower__header--subtitle {
+.lower-header__subtitle {
   flex-direction: row;
   align-items: center;
   position: absolute;
@@ -299,7 +299,7 @@ ul.no-bullets {
 }
 }
 @media(min-width: 80rem) and (min-height: 56.26rem) {
-  .lower__header--subtitle {
+  .lower-header__subtitle {
     flex-direction: row;
     align-items: center;
     position: absolute;
@@ -308,37 +308,37 @@ ul.no-bullets {
   }
   }
 
-.lower__header--svg-small {
+.lower-header__svg-small {
   height: 1.625rem;
   margin: 0 0 0.625rem;
 }
 @media(min-width: 80rem) {
-  .lower__header--svg-small {
+  .lower-header__svg-small {
     width: 7rem;
     transform: rotate(-90deg);
     padding-left: 1.5rem;
   }
 }
 
-.lower__header--svg-large {
+.lower-header__svg-large {
   width: 16.25rem;
 }
 @media(min-width: 80rem) {
-  .lower__header--svg-large {
+  .lower-header__svg-large {
     width: 25rem;
   }
 }
 
-.lower__header--svg {
+.lower-header__svg {
   fill: #000000;
 }
 @media(min-width: 80rem) {
-  .lower__header--svg {
+  .lower-header__svg {
     fill: #FFFFFF;
   }
 }
 
-.lower__header--calendar {
+.lower-header__calendar {
   margin: 0;
   padding: 0;
   display: flex;
@@ -346,13 +346,13 @@ ul.no-bullets {
 }
 
 @media(min-width: 48rem) {
-  .lower__header--calendar {
+  .lower-header__calendar {
     flex-wrap: nowrap;
   }
 }
 
 @media(min-width: 80rem) and (max-height: 56.25rem) {
-  .lower__header--calendar {
+  .lower-header__calendar {
     flex-wrap: wrap;
     width: 37.5rem;
     position: absolute;
@@ -361,7 +361,7 @@ ul.no-bullets {
   }
 }
 @media(min-width: 80rem) and (min-height: 56.26rem) {
-  .lower__header--calendar {
+  .lower-header__calendar {
     flex-wrap: wrap;
     width: 18.75rem;
     position: absolute;
@@ -370,7 +370,7 @@ ul.no-bullets {
   }
 }
 
-.lower__header--calendar>li {
+.lower-header__calendar>li {
   width: 20%;
   padding-top: 20%;
   box-sizing: border-box;
@@ -378,26 +378,26 @@ ul.no-bullets {
 }
 
 @media(min-width: 48rem) {
-  .lower__header--calendar>li {
+  .lower-header__calendar>li {
     width: 10%;
     padding-top: 10%;
   }
 }
 
 @media(min-width: 80rem) and (max-height: 56.25rem) {
-  .lower__header--calendar>li {
+  .lower-header__calendar>li {
     width: 20%;
     padding-top: 16%;
   }
 }
 @media(min-width: 80rem) and (min-height: 56.26rem) {
-  .lower__header--calendar>li {
+  .lower-header__calendar>li {
     width: 50%;
     padding-top: 30%;
   }
 }
 
-.calendar--link {
+.calendar__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -414,49 +414,49 @@ ul.no-bullets {
 }
 
 @media(min-width: 80rem) {
-  .calendar--link {
+  .calendar__link {
     background-color: #FFFFFF;
     color: #000000;
   }
 }
 
-.calendar--link:hover {
+.calendar__link:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
 @media(min-width: 80rem) {
-  .calendar--link:hover {
+  .calendar__link:hover {
     background-color: #000000;
     color: #FFFFFF;
   }
 }
 
-.calendar--link>p {
+.calendar__link>p {
   margin: 0;
 }
 
-.calendar--day-abbrev {
+.calendar__day-abbrev {
 
 }
 
 @media(min-width: 36rem) {
-  .calendar--day-abbrev {
+  .calendar__day-abbrev {
     font-size: 1.625rem;
   }
 }
 
-.calendar--day-numerical {
+.calendar__day-numerical {
   font-size: 0.813rem;
 }
 
 @media(min-width: 36rem) {
-  .calendar--day-numerical {
+  .calendar__day-numerical {
     font-size: 1.125rem;
   }
 }
 
 /* footer css */
-section.upper__footer {
+section.upper-footer {
   margin: 8rem auto 2rem;
   width: calc(100% - 3rem);
   max-width: 50rem;
@@ -505,7 +505,7 @@ p>a {
   color: #000000;
 }
 
-section.lower__footer {
+section.lower-footer {
   height: 27.5rem;
   background: #000000 url(../media/images/Gentse-feesten-01.jpg) 40% center no-repeat;
   background-size: cover;
@@ -513,13 +513,13 @@ section.lower__footer {
 }
 
 @media(min-width: 80rem) {
-  section.lower__footer {
+  section.lower-footer {
     background-position-x: -40%;
     padding-bottom: 10rem;
   }
 }
 
-section.lower__footer--content {
+section.lower-footer__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -528,7 +528,7 @@ section.lower__footer--content {
   margin: 0 auto;
 }
 
-section.lower__footer--content>img {
+section.lower-footer__content>img {
   display: block;
   box-sizing: border-box;
   width: 15.75rem;
@@ -537,7 +537,7 @@ section.lower__footer--content>img {
 }
 
 @media(min-width: 48rem) {
-  section.lower__footer--content>img {
+  section.lower-footer__content>img {
     width: 22rem;
   }
 }
