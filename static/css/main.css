@@ -7,9 +7,14 @@ html {
 }
 
 body {
-  margin: 0;
+margin: 0;
 }
 
+.container {
+  margin: 0 auto;
+  width: 95rem;
+  max-width: 100%;
+}
 .all-padding {
   padding: 1.5rem;
 }
@@ -33,7 +38,7 @@ label {
   margin-bottom: 0.375rem;
 }
 
-ul.no-bullets {
+.no-bullets {
   list-style-type: none;
 }
 
@@ -48,16 +53,15 @@ ul.no-bullets {
   outline-offset: -2px;
 }
 
-
 /* header css */
 /* upper part of header */
 .upper-header {
   box-sizing: border-box;
   height: 75vh;
-  padding: 1.5rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 @media(min-width: 80rem) {
@@ -317,6 +321,11 @@ ul.no-bullets {
 }
 
 /* lower part of header */
+.lower-header {
+  position: relative;
+  width: 100%;
+  max-width: 95rem;
+}
 .lower-header__subtitle {
   padding: 1.5rem;
   display: flex;
@@ -327,7 +336,7 @@ ul.no-bullets {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  bottom: calc(15% + 12rem);
+  bottom: calc(2rem + 12rem);
   right: 0;
 }
 }
@@ -336,7 +345,7 @@ ul.no-bullets {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    bottom: calc(15% + 28.125rem);
+    bottom: calc(2rem + 28.125rem);
     right: 0;
   }
   }
@@ -389,7 +398,7 @@ ul.no-bullets {
     flex-wrap: wrap;
     width: 37.5rem;
     position: absolute;
-    bottom: 15%;
+    bottom: 2rem;
     right: 0;
   }
 }
@@ -398,7 +407,7 @@ ul.no-bullets {
     flex-wrap: wrap;
     width: 18.75rem;
     position: absolute;
-    bottom: 15%;
+    bottom: 2rem;
     right: 0;
   }
 }
@@ -556,8 +565,7 @@ p>a {
   flex-direction: column;
   justify-content: space-between;
   height: 27.5rem;
-  max-width: 80rem;
-  margin: 0 auto;
+  
 }
 
 .lower-footer__logo {

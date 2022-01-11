@@ -22,100 +22,103 @@
 <body>
     <header>
         <!-- upper section of header -->
-        <section id="needsRandomBackground" class="upper-header background">
-            <a href="index.html" class="focus-effect">
-                <img src="static/media/images/Gentse-feesten-adapted-logo-with-date.svg" alt="logo Gentse feesten"
-                    class="upper-header__logo">
-            </a>
-            <!-- hamburger-menu only visible on < 80rem width -->
-            <nav>
-                <button class="upper-header__burger-menu focus-effect">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 180">
-                        <g fill="#fff" fill-rule="nonzero">
-                            <path
-                                d="M195.282 75H61.718C53.593 75 47 81.72 47 90c0 8.28 6.595 15 14.718 15h133.564C203.407 105 210 98.28 210 90c0-8.28-6.593-15-14.718-15zM194.273 150H14.727C6.597 150 0 156.72 0 165c0 8.28 6.598 15 14.727 15h179.546c8.13 0 14.727-6.72 14.727-15 .001-8.28-6.597-15-14.727-15zM194.273 0H14.727C6.597 0 0 6.72 0 15c0 8.28 6.598 15 14.727 15h179.546C202.403 30 209 23.28 209 15c.001-8.28-6.597-15-14.727-15z" />
-                        </g>
-                    </svg>
-                </button>
-
-                <ul class="no-bullets burger-menu-inside">
-                    <button class="burger-menu-inside__button focus-effect">
-                        <img src="static/media/icons/cross.svg" alt="cross">
-                    </button>
-                    <li>
-                        <a href="index.html" class="burger-menu-inside__links focus-effect">Home</a>
-                    </li>
-                    <li>
-                        <a href="evenementen/search.html" class="burger-menu-inside__links focus-effect">Zoeken</a>
-                    </li>
-                    <button class="burger-menu-inside__program-button focus-effect">
-                        Programma
-                        <img src="static/media/icons/chevron-down.svg" alt="chevron down" class="chevron chevron-down">
-                    </button>
-                    <ul class="no-bullets burger-menu-inside__day-menu">
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Vrijdag 19 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Zaterdag 20 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Zondag 21 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Maandag 22 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Dinsdag 23 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Woensdag 24 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Donderdag 25 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Vrijdag 26 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Zaterdag 27 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Zondag 28 juli</a></li>
-                        <li><a href="" class="burger-menu-inside__day-links focus-effect">Programma</a></li>
-                    </ul>
-                    <li>
-                        <a href="news.html" class="burger-menu-inside__links focus-effect">Nieuws</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="burger-menu-inside__links focus-effect">Info</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- full menu only visible on > 80rem width -->
-            <section class="upper-header__full-menu">
-                <section class="full-menu__upper-part">
-                    <section class="full-menu-searchbar">
-                        <input class="full-menu-searchbar__input focus-effect" type="text"
-                            placeholder="Doorzoek het programma...">
-
-                        <button class="full-menu-searchbar__search-button">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                viewBox="0 0 32 32">
-                                <title>search</title>
+        <section id="needsRandomBackground" class="background">
+            <section class="upper-header container all-padding">
+                <a href="index.html" class="focus-effect">
+                    <img src="static/media/images/Gentse-feesten-adapted-logo-with-date.svg" alt="logo Gentse feesten"
+                        class="upper-header__logo">
+                </a>
+                <!-- hamburger-menu only visible on < 80rem width -->
+                <nav>
+                    <button class="upper-header__burger-menu focus-effect">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 180">
+                            <g fill="#fff" fill-rule="nonzero">
                                 <path
-                                    d="M19.371 17.952l1.997 1.997c0.272-0.11 0.587-0.174 0.917-0.174 0.693 0 1.321 0.281 1.776 0.736l3.704 3.704c0.454 0.454 0.735 1.082 0.735 1.775 0 1.386-1.124 2.51-2.51 2.51-0.693 0-1.321-0.281-1.775-0.735v0l-3.705-3.705c-0.455-0.454-0.736-1.082-0.736-1.776 0-0.33 0.064-0.645 0.179-0.933l-0.006 0.017-2.053-2.053c-1.474 1.098-3.332 1.758-5.343 1.758-0.005 0-0.010 0-0.015 0h0.001c-4.991 0-9.037-4.046-9.037-9.037s4.046-9.037 9.037-9.037v0c0 0 0 0 0.001 0 4.991 0 9.037 4.046 9.037 9.037 0 2.267-0.835 4.339-2.214 5.926l0.009-0.011zM12.538 18.062c3.328 0 6.025-2.697 6.025-6.025s-2.697-6.025-6.025-6.025v0c-3.328 0-6.025 2.697-6.025 6.025s2.697 6.025 6.025 6.025v0z">
-                                </path>
-                            </svg>
-                        </button>
-                    </section>
-                    <select name="languages" id="languages" class="full-menu__language-select focus-effect">
-                        <option value="NL">NL</option>
-                        <option value="EN">EN</option>
-                        <option value="FR">FR</option>
-                    </select>
-                </section>
+                                    d="M195.282 75H61.718C53.593 75 47 81.72 47 90c0 8.28 6.595 15 14.718 15h133.564C203.407 105 210 98.28 210 90c0-8.28-6.593-15-14.718-15zM194.273 150H14.727C6.597 150 0 156.72 0 165c0 8.28 6.598 15 14.727 15h179.546c8.13 0 14.727-6.72 14.727-15 .001-8.28-6.597-15-14.727-15zM194.273 0H14.727C6.597 0 0 6.72 0 15c0 8.28 6.598 15 14.727 15h179.546C202.403 30 209 23.28 209 15c.001-8.28-6.597-15-14.727-15z" />
+                            </g>
+                        </svg>
+                    </button>
 
-                <ul class="no-bullets full-menu__links">
-                    <li>
-                        <a href="index.html" class="menu-links focus-effect">Home</a>
-                    </li>
-                    <li>
-                        <a href="evenementen/dag.html" class="menu-links focus-effect">Programma</a>
-                    </li>
-                    <li>
-                        <a href="news.html" class="menu-links current-page focus-effect">Nieuws</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="menu-links focus-effect">Info</a>
-                    </li>
-                </ul>
+                    <ul class="no-bullets burger-menu-inside">
+                        <button class="burger-menu-inside__button focus-effect">
+                            <img src="static/media/icons/cross.svg" alt="cross">
+                        </button>
+                        <li>
+                            <a href="index.html" class="burger-menu-inside__links focus-effect">Home</a>
+                        </li>
+                        <li>
+                            <a href="evenementen/search.html" class="burger-menu-inside__links focus-effect">Zoeken</a>
+                        </li>
+                        <button class="burger-menu-inside__program-button focus-effect">
+                            Programma
+                            <img src="static/media/icons/chevron-down.svg" alt="chevron down"
+                                class="chevron chevron-down">
+                        </button>
+                        <ul class="no-bullets burger-menu-inside__day-menu">
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Vrijdag 19 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Zaterdag 20 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Zondag 21 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Maandag 22 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Dinsdag 23 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Woensdag 24 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Donderdag 25 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Vrijdag 26 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Zaterdag 27 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Zondag 28 juli</a></li>
+                            <li><a href="" class="burger-menu-inside__day-links focus-effect">Programma</a></li>
+                        </ul>
+                        <li>
+                            <a href="news.html" class="burger-menu-inside__links focus-effect">Nieuws</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="burger-menu-inside__links focus-effect">Info</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- full menu only visible on > 80rem width -->
+                <section class="upper-header__full-menu">
+                    <section class="full-menu__upper-part">
+                        <section class="full-menu-searchbar">
+                            <input class="full-menu-searchbar__input focus-effect" type="text"
+                                placeholder="Doorzoek het programma...">
+
+                            <button class="full-menu-searchbar__search-button">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 32 32">
+                                    <title>search</title>
+                                    <path
+                                        d="M19.371 17.952l1.997 1.997c0.272-0.11 0.587-0.174 0.917-0.174 0.693 0 1.321 0.281 1.776 0.736l3.704 3.704c0.454 0.454 0.735 1.082 0.735 1.775 0 1.386-1.124 2.51-2.51 2.51-0.693 0-1.321-0.281-1.775-0.735v0l-3.705-3.705c-0.455-0.454-0.736-1.082-0.736-1.776 0-0.33 0.064-0.645 0.179-0.933l-0.006 0.017-2.053-2.053c-1.474 1.098-3.332 1.758-5.343 1.758-0.005 0-0.010 0-0.015 0h0.001c-4.991 0-9.037-4.046-9.037-9.037s4.046-9.037 9.037-9.037v0c0 0 0 0 0.001 0 4.991 0 9.037 4.046 9.037 9.037 0 2.267-0.835 4.339-2.214 5.926l0.009-0.011zM12.538 18.062c3.328 0 6.025-2.697 6.025-6.025s-2.697-6.025-6.025-6.025v0c-3.328 0-6.025 2.697-6.025 6.025s2.697 6.025 6.025 6.025v0z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </section>
+                        <select name="languages" id="languages" class="full-menu__language-select focus-effect">
+                            <option value="NL">NL</option>
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                        </select>
+                    </section>
+
+                    <ul class="no-bullets full-menu__links">
+                        <li>
+                            <a href="index.html" class="menu-links focus-effect">Home</a>
+                        </li>
+                        <li>
+                            <a href="evenementen/dag.html" class="menu-links focus-effect">Programma</a>
+                        </li>
+                        <li>
+                            <a href="news.html" class="menu-links focus-effect current-page">Nieuws</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="menu-links focus-effect">Info</a>
+                        </li>
+                    </ul>
+                </section>
             </section>
         </section>
 
         <!-- lower section of header -->
-        <section>
+        <section class="lower-header container">
             <section class="lower-header__subtitle">
                 <!-- #GF20 -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="lower-header__svg-small">
@@ -242,8 +245,8 @@
         </section>
 
         <!-- lower section of the footer -->
-        <section class="lower-footer side-padding">
-            <section class="lower-footer__content">
+        <section class="lower-footer">
+            <section class="lower-footer__content container side-padding">
                 <a href="index.html" class="lower-footer__logo focus-effect">
                     <img src="static/media/images/Gentse-feesten-adapted-logo-with-date.svg" alt="logo Gentse feesten">
                 </a>
