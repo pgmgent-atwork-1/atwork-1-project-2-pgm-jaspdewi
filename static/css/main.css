@@ -13,7 +13,7 @@ margin: 0;
 .container {
   margin: 0 auto;
   width: 95rem;
-  max-width: 100%;
+  max-width: calc(100% - 3rem);
 }
 .all-padding {
   padding: 1.5rem;
@@ -27,6 +27,20 @@ h2 {
   font-weight: 900;
   font-size: 1.875rem;
   margin: 0 0 1rem;
+}
+
+h3{
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
 }
 
 p {
@@ -47,7 +61,7 @@ label {
   outline-offset: -2px;
 }
 
-.focus-effect--circle:focus {
+.focus-effect--circle:hover {
   outline: 2px dotted #ff0000;
   border-radius: 50%;
   outline-offset: -2px;
@@ -565,7 +579,7 @@ p>a {
   flex-direction: column;
   justify-content: space-between;
   height: 27.5rem;
-  
+  width: calc(100% - 3rem);
 }
 
 .lower-footer__logo {
