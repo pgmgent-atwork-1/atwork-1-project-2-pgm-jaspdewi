@@ -1,5 +1,5 @@
 (() => {
-  const app = {
+  const index = {
     init() {
       console.log('1. Application initialized');
 
@@ -84,5 +84,5 @@
     },
 
   };
-  app.init();
+  index.init();
 })();
