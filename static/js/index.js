@@ -30,7 +30,7 @@
           // use default-img.jpg as thumbnail when none is available
           return `
           <li class="event">
-          <a href="" class="main--links">
+          <a href="" class="main__links event-link">
           <div class="event__thumbnail-container">
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
@@ -61,11 +61,11 @@
           // get correct data from new Date 
           const month = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
           const date = new Date(news.publishedAt);
-          let dayMonth = `${date.getDate()}/${month[date.getMonth()]}`;
-          console.log(dayMonth)
+          const day = date.getDate();
+          let dayMonth = `${day < 10 ? "0" + day : day}/${month[date.getMonth()]}`;
           return `
           <li class="news-article ">
-                <a href="" class="main--links news-link">
+                <a href="" class="main__links news-link">
                     <div class="news__thumbnail-container">
                         <img class="news__thumbnail" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
                         <div class="news__date">${dayMonth}</div>
