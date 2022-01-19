@@ -7,7 +7,7 @@ html {
 }
 
 body {
-margin: 0;
+  margin: 0;
 }
 
 .container {
@@ -15,6 +15,7 @@ margin: 0;
   width: 95rem;
   max-width: calc(100% - 3rem);
 }
+
 .all-padding {
   padding: 1.5rem;
 }
@@ -29,7 +30,7 @@ h2 {
   margin: 0 0 1rem;
 }
 
-h3{
+h3 {
   font-weight: 900;
   font-size: 1.5rem;
   margin: 0;
@@ -69,6 +70,53 @@ label {
 
 /* header css */
 /* upper part of header */
+.background01 {
+  background: #000000 url(../media/images/Gentse-feesten-01.jpg) no-repeat;
+}
+
+.background02 {
+  background: #000000 url(../media/images/Gentse-feesten-02.jpg)no-repeat;
+}
+
+.background03 {
+  background: #000000 url(../media/images/Gentse-feesten-03.jpg)no-repeat;
+}
+
+.background04 {
+  background: #000000 url(../media/images/Gentse-feesten-04.jpg)no-repeat;
+}
+
+.background05 {
+  background: #000000 url(../media/images/Gentse-feesten-05.jpg) no-repeat;
+}
+
+.background06 {
+  background: #000000 url(../media/images/Gentse-feesten-06.jpg) no-repeat;
+}
+
+.background07 {
+  background: #000000 url(../media/images/Gentse-feesten-07.jpg) no-repeat;
+}
+
+.background08 {
+  background: #000000 url(../media/images/Gentse-feesten-08.jpg) no-repeat;
+}
+
+.background09 {
+  background: #000000 url(../media/images/Gentse-feesten-09.jpg) no-repeat;
+}
+
+.background {
+  background-position: 35% center;
+  background-size: cover;
+}
+
+@media(min-width: 80rem) {
+  .background {
+    background-position: 50% center;
+  }
+}
+
 .upper-header {
   box-sizing: border-box;
   height: 75vh;
@@ -84,43 +132,33 @@ label {
   }
 }
 
-.background01 {
-  background: #000000 url(../media/images/Gentse-feesten-01.jpg) no-repeat;
+.upper-header--day {
+  padding: 1.5rem 0;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
-.background02 {
-  background: #000000 url(../media/images/Gentse-feesten-02.jpg)no-repeat;
-}
-.background03 {
-  background: #000000 url(../media/images/Gentse-feesten-03.jpg)no-repeat;
-}
-.background04 {
-  background: #000000 url(../media/images/Gentse-feesten-04.jpg)no-repeat;
-}
-.background05 {
-  background: #000000 url(../media/images/Gentse-feesten-05.jpg) no-repeat;
-}
-.background06 {
-  background: #000000 url(../media/images/Gentse-feesten-06.jpg) no-repeat;
-}
-.background07 {
-  background: #000000 url(../media/images/Gentse-feesten-07.jpg) no-repeat;
-}
-.background08 {
-  background: #000000 url(../media/images/Gentse-feesten-08.jpg) no-repeat;
-}
-.background09 {
-  background: #000000 url(../media/images/Gentse-feesten-09.jpg) no-repeat;
-}
-
-.background {
-  background-position: 35% center;
-  background-size: cover;
+@media(min-width: 64rem) {
+  .upper-header--day {
+    justify-content: flex-start
+  }
 }
 
 @media(min-width: 80rem) {
-  .background {
-    background-position: 50% center;
+  .upper-header--day {
+    height: 90vh;
+    justify-content: space-between;
   }
+}
+
+.upper-header--day__top {
+  width:100%;
+  padding-bottom: 15vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .upper-header__logo {
@@ -176,7 +214,8 @@ label {
   right: 0%;
   cursor: pointer;
 }
-.burger-menu-inside__button > img {
+
+.burger-menu-inside__button>img {
   width: 2.5rem;
 }
 
@@ -187,6 +226,7 @@ label {
   color: #FFFFFF;
   text-decoration: none;
 }
+
 .burger-menu-inside__links:hover {
   text-decoration: underline;
 }
@@ -207,10 +247,12 @@ label {
   display: flex;
   align-items: center;
 }
+
 .burger-menu-inside__program-button:hover {
   text-decoration: underline;
 }
-.burger-menu-inside__program-button > svg {
+
+.burger-menu-inside__program-button>svg {
   fill: #FFFFFF;
 }
 
@@ -220,7 +262,8 @@ label {
   padding-left: 1.5rem;
   display: none;
 }
-.burger-menu-inside__day-menu > li{
+
+.burger-menu-inside__day-menu>li {
   margin: 1rem 0;
 }
 
@@ -228,6 +271,7 @@ label {
   color: #FFFFFF;
   text-decoration: none;
 }
+
 .burger-menu-inside__day-links:hover {
   text-decoration: underline;
 }
@@ -239,6 +283,7 @@ label {
 .chevron-down {
   transform: rotate(0deg);
 }
+
 .chevron-up {
   transform: rotate(180deg);
 }
@@ -280,15 +325,18 @@ label {
   padding: 0;
   background: #000000;
 }
+
 .full-menu-searchbar__search-button:hover {
   background: #FFFFFF;
 }
-.full-menu-searchbar__search-button > svg {
+
+.full-menu-searchbar__search-button>svg {
   fill: #FFFFFF;
   padding: 0 1.313rem;
   width: 1.5rem;
 }
-.full-menu-searchbar__search-button > svg:hover {
+
+.full-menu-searchbar__search-button>svg:hover {
   fill: #000000;
 }
 
@@ -305,7 +353,8 @@ label {
   justify-content: flex-end;
   padding: 0;
 }
-.full-menu__links > li {
+
+.full-menu__links>li {
   padding: 0 1.375rem;
 }
 
@@ -325,7 +374,7 @@ label {
   background: #FFFFFF;
 }
 
-.current-page::after{
+.current-page::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -334,26 +383,66 @@ label {
   background: #FFFFFF;
 }
 
+.upper-header--day__subtitle {
+  max-width: 100%;
+  width: 18.25rem;
+  margin-left: auto;
+  margin-right: 0;
+  height: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+@media(min-width: 64rem){
+  .upper-header--day__subtitle {
+    width: 22.5rem;
+    height: 8rem;
+  }
+}
+@media(min-width: 80rem){
+  .upper-header--day__subtitle {
+    width: 32.5rem;
+    height: 10rem;
+  }
+}
+.upper-header--day__svg-small {
+  height: 1.625rem;
+  width: 7rem;
+  margin: 0 0 0.625rem;
+}
+
+.upper-header--day__svg-large {
+  width: 100%;
+}
+
+.upper-header--day__svg {
+  fill: #FFFFFF;
+}
+
 /* lower part of header */
 .lower-header {
   position: relative;
-  width: 100%;
-  max-width: 95rem;
+  max-width: 100%;
+
 }
+
 .lower-header__subtitle {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
+
 @media(min-width: 80rem) and (max-height: 56.25rem) {
-.lower-header__subtitle {
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  bottom: calc(2rem + 12rem);
-  right: 0;
+  .lower-header__subtitle {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: calc(2rem + 12rem);
+    right: 0;
+  }
 }
-}
+
 @media(min-width: 80rem) and (min-height: 56.26rem) {
   .lower-header__subtitle {
     flex-direction: row;
@@ -362,12 +451,13 @@ label {
     bottom: calc(2rem + 28.125rem);
     right: 0;
   }
-  }
+}
 
 .lower-header__svg-small {
   height: 1.625rem;
   margin: 0 0 0.625rem;
 }
+
 @media(min-width: 80rem) {
   .lower-header__svg-small {
     width: 7rem;
@@ -379,6 +469,7 @@ label {
 .lower-header__svg-large {
   width: 16.25rem;
 }
+
 @media(min-width: 80rem) {
   .lower-header__svg-large {
     width: 25rem;
@@ -388,13 +479,15 @@ label {
 .lower-header__svg {
   fill: #000000;
 }
+
 @media(min-width: 80rem) {
   .lower-header__svg {
     fill: #FFFFFF;
   }
 }
 
-.lower-header__calendar {
+.lower-header__calendar,
+.lower-header--day__calendar {
   margin: 0;
   padding: 0;
   display: flex;
@@ -402,7 +495,9 @@ label {
 }
 
 @media(min-width: 48rem) {
-  .lower-header__calendar {
+
+  .lower-header__calendar,
+  .lower-header--day__calendar {
     flex-wrap: nowrap;
   }
 }
@@ -416,6 +511,7 @@ label {
     right: 0;
   }
 }
+
 @media(min-width: 80rem) and (min-height: 56.26rem) {
   .lower-header__calendar {
     flex-wrap: wrap;
@@ -426,7 +522,15 @@ label {
   }
 }
 
-.lower-header__calendar>li {
+@media(min-width: 95rem) {
+  .lower-header--day__calendar {
+    margin: 0 auto;
+    width: 95rem;
+  }
+}
+
+.lower-header__calendar>li,
+.lower-header--day__calendar>li {
   width: 20%;
   padding-top: 20%;
   box-sizing: border-box;
@@ -434,7 +538,9 @@ label {
 }
 
 @media(min-width: 48rem) {
-  .lower-header__calendar>li {
+
+  .lower-header__calendar>li,
+  .lower-header--day__calendar>li {
     width: 10%;
     padding-top: 10%;
   }
@@ -446,6 +552,7 @@ label {
     padding-top: 16%;
   }
 }
+
 @media(min-width: 80rem) and (min-height: 56.26rem) {
   .lower-header__calendar>li {
     width: 50%;
@@ -453,7 +560,8 @@ label {
   }
 }
 
-.calendar__link {
+.calendar__link,
+.calendar--day__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -476,10 +584,12 @@ label {
   }
 }
 
-.calendar__link:hover {
+.calendar__link:hover,
+.calendar--day__link:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
+
 @media(min-width: 80rem) {
   .calendar__link:hover {
     background-color: #000000;
@@ -487,7 +597,8 @@ label {
   }
 }
 
-.calendar__link>p {
+.calendar__link>p,
+.calendar--day__link>p {
   margin: 0;
 }
 
@@ -521,6 +632,7 @@ label {
 label {
   font-weight: 400;
 }
+
 .footer__email-input {
   width: 100%;
   position: relative;
@@ -615,7 +727,7 @@ p>a {
   padding: 0;
 }
 
-.footer__ul-flexbox > li {
+.footer__ul-flexbox>li {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #FFFFFF;
@@ -623,13 +735,16 @@ p>a {
   margin-right: 1rem;
   transition: background-color 0.5s ease;
 }
-.footer__ul-flexbox > li:hover{
+
+.footer__ul-flexbox>li:hover {
   background-color: #2b2b2b;
 }
-.footer__list > svg {
+
+.footer__list>svg {
   padding: 0.5rem;
   border-radius: 50%;
 }
-.footer__list > svg:hover {
-  fill:#FFFFFF;
+
+.footer__list>svg:hover {
+  fill: #FFFFFF;
 }
