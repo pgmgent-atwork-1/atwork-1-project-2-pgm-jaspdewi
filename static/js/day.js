@@ -44,7 +44,7 @@
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
             <article class="event__article">
-              <div class="event__date">
+              <div class="random-event__date">
               <p class="date__hour">${event.start} u</p>
               </div>
               <h3 class="event__name">${event.title}</h3>
