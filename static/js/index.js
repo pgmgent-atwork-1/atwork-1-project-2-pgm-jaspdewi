@@ -37,7 +37,7 @@
             <article class="event__article">
               <div class="event__date">
               <p class="date__day">${(event.day_of_week).slice(0,2)} ${event.day} Jul</p>
-              <p class="date__hour">${event.start} u</p>
+              <p class="date__hour">${event.start} u.</p>
               </div>
               <h3 class="event__name">${event.title}</h3>
               <p class="event__location">${event.location}</p>

@@ -67,7 +67,6 @@ p>a {
   flex-direction: column;
   justify-content: space-between;
   height: 27.5rem;
-  width: calc(100% - 3rem);
 }
 
 .lower-footer__logo {

@@ -20,8 +20,7 @@
       console.log('2. Randomize image');
       // randomizes number between 0 & 8
       const randomizer = Math.floor(Math.random() * imageLinks.length);
-      // shows randomized number in the console
-      console.log(randomizer);
+      // adds background according to randomized number
       const header = document.getElementById('needsRandomBackground');
       header.classList.add(`background0${randomizer + 1}`);
 
