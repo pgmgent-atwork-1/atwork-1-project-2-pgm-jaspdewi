@@ -536,6 +536,11 @@
   margin: 0;
 }
 
+.active-day {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
 .calendar__day-abbrev {
   font-weight: 700;
 }

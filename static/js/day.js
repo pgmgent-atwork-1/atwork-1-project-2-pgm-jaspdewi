@@ -29,8 +29,13 @@
       this.day = params.has('day') ? params.get('day') : "19";
       const filteredData = data.filter(event => event.day === this.day);
       
+      this.addClassToActiveDay();
       this.generateRandomEventHTML(filteredData);
       this.generateAllEventsForDay(filteredData);
+    },
+    addClassToActiveDay() {
+      const activeDay = document.getElementById(`${this.day}`);
+      activeDay.classList.add('active-day');
     },
     generateRandomEventHTML(data) {
       console.log('4. generate 3 random event-previews');
@@ -99,7 +104,7 @@
         <section class="events-by-category">
         <div class="category__title">
         <h2 id="${cat}">${cat}</h2>
-        <a href="evenementen/dag.html?day=${this.day}#categories__list" class="to-category-list">
+        <a href="evenementen/day.html?day=${this.day}#categories__list" class="to-category-list">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
           <title>arrow-up</title>
           <path d="M13.682 11.791l-6.617 6.296-3.065-2.916 11.74-11.171 12.26 11.665-2.935 2.793-7.113-6.768v16.311h-4.269z"></path>
@@ -122,7 +127,7 @@
       const categoryList = this.categories.map((cat) => {
         return `
         <li>
-        <a href="evenementen/dag.html?day=${this.day}#${cat}" class="category">
+        <a href="evenementen/day.html?day=${this.day}#${cat}" class="category">
         ${cat}
         </a>
         </li>
