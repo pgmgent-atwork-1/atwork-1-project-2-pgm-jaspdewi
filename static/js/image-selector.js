@@ -10,7 +10,7 @@
     "static/media/images/Gentse-feesten-08.jpg",
     "static/media/images/Gentse-feesten-09.jpg",
   ];
-    
+
   const app = {
     init() {
       console.log('1. header image randomizer initialized');

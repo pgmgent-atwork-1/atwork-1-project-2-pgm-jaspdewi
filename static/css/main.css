@@ -477,7 +477,10 @@ label {
   }
 }
 
-/* css for searchbar on the programma-page (dag.html) */
+/* css for searchbar on the programma- & zoeken-pages (dag.html & search-html) */
+.searchbar {
+  margin-top: 3.75rem;
+}
 .day__search-events {
   background-color: #000;
   padding: 5rem 0;
@@ -502,10 +505,14 @@ label {
 }
 
 .day-searchbar__input {
-
   width: calc(100% - 4.5rem);
   height: 3.5rem;
   padding: 0 1rem;
+}
+.searchbar__input {
+  max-width: 49rem;
+  padding: 0 5rem 0 1rem;
+  background-color: #e9e9e9;
 }
 
 .day-searchbar__search-button {
