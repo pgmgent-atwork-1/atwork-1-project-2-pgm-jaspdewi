@@ -33,6 +33,7 @@ label {
   height: 3.5rem;
   padding: 0.938rem 1.875rem;
   margin-top: 1.25rem;
+  cursor: pointer;
 }
 
 @media(min-width: 36rem) {
