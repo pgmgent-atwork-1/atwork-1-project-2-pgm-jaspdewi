@@ -1,5 +1,5 @@
 (() => {
-  const app = {
+  const day = {
     init() {
       console.log('1. Application initialized');
 
@@ -195,5 +195,5 @@
       }))
     }
   };
-  app.init();
+  day.init();
 })();

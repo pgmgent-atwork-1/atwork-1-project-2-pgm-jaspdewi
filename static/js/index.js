@@ -58,7 +58,7 @@
         const newsData = [data[i]];
 
         const event = newsData.map((news) => {
-          // get correct data from new Date 
+          // get correct data from new Date() 
           const month = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
           const date = new Date(news.publishedAt);
           const day = date.getDate();
