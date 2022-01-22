@@ -65,6 +65,11 @@ label {
   list-style-type: none;
 }
 
+.strong {
+  font-weight: 800;
+  margin-right: 0.225rem;
+}
+
 .focus-effect:focus {
   outline: 2px dotted #ff0000;
   outline-offset: -2px;
@@ -355,10 +360,6 @@ label {
   margin-right: 1.5rem;
 }
 
-.display-toggle-button--active {
-  border: 3px dotted #ff0000;
-}
-
 .display-toggle-button:hover,
 .display-toggle-button--active {
   background-color: #000;
@@ -423,10 +424,6 @@ label {
   margin-bottom: 1.5rem;
 }
 
-.categorized-event__thumbnail--invisible {
-  display: none;
-}
-
 .categorized-event__article--raster {
   position: static;
   display: flex;
@@ -444,7 +441,7 @@ label {
 .categorized-event__article--raster>div {
   margin: 0;
   padding: 0;
-
+  justify-content: flex-start;
 }
 
 .categorized-event__article--raster>div>p {
@@ -518,7 +515,11 @@ label {
 .day-searchbar__search-button {
   height: 3.5rem
 }
-
+/* css for search-results on search.html*/
+.searchresult--amount {
+  display: flex;
+  margin-top: 3rem;
+}
 /* css for news */
 .main__news {
   margin: 3.125rem auto 0;
@@ -610,4 +611,10 @@ label {
 .carrousel__image {
   width: 100%;
   margin: 0 auto;
+}
+
+/* effects that shouldn't be overwritten by the effects of other classes*/
+
+.invisible {
+  display: none;
 }
