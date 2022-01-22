@@ -7,6 +7,7 @@
 
       this.cacheElements();
       this.fetchDayData();
+      this.createEventListeners();
     },
     cacheElements() {
       console.log('2. Cache elements');
@@ -14,7 +15,9 @@
       this.$randomPreviews = document.querySelector('.events');
       this.$categoryList = document.querySelector('.categories__list');
       this.$categorizedEvents = document.querySelector('.day__all-events');
-
+      this.$buttons = document.querySelector('.display-toggle-buttons');
+      this.$listButton = document.querySelector('.display-toggle-button--list');
+      this.$rasterButton = document.querySelector('.display-toggle-button--raster');
     },
     async fetchDayData() {
       console.log('3. Retrieve and filter event data');
@@ -70,17 +73,16 @@
       const events = data;
       // get category-data from services.js-file
       this.categories = await this.getData.getCategoryData();
-      console.log(this.categories);
       const allEventsHtml = this.categories.map((cat) => {
-        // same html for events as before (day.js 41 - 57)
+        // mostly same html for events as before (day.js 41 - 57)
         const categorizedEvents = events.filter((event) => event.category[0] === cat || event.category[1] === cat).map((event) => {
           return `
-          <li class="event">
+          <li class="event categorized-event">
           <a href="" class="main__links event-link">
-          <div class="event__thumbnail-container">
+          <div class="event__thumbnail-container categorized-event__thumbnail">
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
-            <article class="event__article">
+            <article class="event__article categorized-event__article">
               <div class="random-event__date">
               <p class="date__hour">${event.start} u.</p>
               </div>
@@ -104,7 +106,7 @@
         </svg>
         </a>
         </div>
-        <ul class="events no-bullets">
+        <ul class="events categorized-events no-bullets">
           ${categorizedEvents}
         </ul>
         </section>
@@ -128,6 +130,65 @@
       }).join('');
       this.$categoryList.innerHTML = categoryList;
     },
+    createEventListeners() {
+      this.$listButtonActive = this.$buttons.querySelector('.display-toggle-button--list.display-toggle-button--active');
+      this.$rasterButtonActive = this.$buttons.querySelector('.display-toggle-button--raster.display-toggle-button--active');
+  
+      // eventlistener on list-button
+      this.$listButton.addEventListener('click', (() => {
+        
+        this.$eventThumbnail = document.querySelectorAll('.categorized-event__thumbnail');
+        this.$eventArticle = document.querySelectorAll('.categorized-event__article');
+        this.$eventsByCategory = document.querySelectorAll('.categorized-events');
+        this.$eventByCategory = document.querySelectorAll('.categorized-event');
+
+        if (this.$rasterButtonActive !== null) {
+          this.$rasterButtonActive.classList.remove('display-toggle-button--active');
+          this.$listButton.classList.add('display-toggle-button--active');
+          for (const event of this.$eventThumbnail) {
+            event.classList.add('categorized-event__thumbnail--invisible');
+          }
+          for (const event of this.$eventsByCategory) {
+            event.classList.remove('events');
+          }
+          for (const event of this.$eventByCategory) {
+            event.classList.replace('event', 'event--raster');
+          }
+          for (const event of this.$eventArticle) {
+            event.classList.add('categorized-event__article--raster');
+          }
+        }
+
+        this.$listButtonActive = this.$buttons.querySelector('.display-toggle-button--list.display-toggle-button--active');
+      }))
+      // eventlistener on raster-button
+      this.$rasterButton.addEventListener('click', (() => {
+
+        this.$eventThumbnail = document.querySelectorAll('.categorized-event__thumbnail');
+        this.$eventArticle = document.querySelectorAll('.categorized-event__article');
+        this.$eventsByCategory = document.querySelectorAll('.categorized-events');
+        this.$eventByCategory = document.querySelectorAll('.categorized-event');
+        
+        if (this.$listButtonActive !== null) {
+          this.$listButtonActive.classList.remove('display-toggle-button--active');
+          this.$rasterButton.classList.add('display-toggle-button--active');
+          for (const event of this.$eventThumbnail) {
+            event.classList.remove('categorized-event__thumbnail--invisible');
+          }
+          for (const event of this.$eventsByCategory) {
+            event.classList.add('events');
+          }
+          for (const event of this.$eventByCategory) {
+            event.classList.replace('event--raster', 'event');
+          }
+          for (const event of this.$eventArticle) {
+            event.classList.remove('categorized-event__article--raster');
+          }
+        }
+
+        this.$rasterButtonActive = this.$buttons.querySelector('.display-toggle-button--raster.display-toggle-button--active');
+      }))
+    }
   };
   app.init();
 })();

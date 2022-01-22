@@ -18,6 +18,12 @@ body {
   max-width: calc(100% - 3rem);
 }
 
+.container--max-width100 {
+  margin: 0 auto;
+  width: 95rem;
+  max-width: 100%;
+}
+
 .all-padding {
   padding: 1.5rem;
 }
@@ -69,6 +75,7 @@ label {
   border-radius: 50%;
   outline-offset: -2px;
 }
+
 .main__links {
   text-decoration: none;
   color: #000;
@@ -187,20 +194,25 @@ label {
   display: flex;
   flex-direction: column;
 }
-.checkboxes-flexbox > li {
+
+.checkboxes-flexbox>li {
   margin-bottom: 1rem;
 }
-.checkbox-flexbox:first-child{
+
+.checkbox-flexbox:first-child {
   margin: 0 0.625rem 0 5.3rem;
 }
+
 .checkbox-flexbox {
   margin: 0 0.625rem 1rem 1.5rem;
   display: flex;
 }
+
 .checkbox {
   width: 1.25rem;
   height: 1.25rem;
 }
+
 .checkbox-box {
   outline: 3px solid #000;
 }
@@ -210,6 +222,7 @@ label {
     display: none;
   }
 }
+
 @media (max-width: 63.999rem) {
   .checkboxes__l {
     display: none;
@@ -229,6 +242,7 @@ label {
   font-size: 2.25rem;
   margin-bottom: 1.25rem;
 }
+
 @media(max-width: 79.999rem) {
   .categories__title {
     display: none;
@@ -262,13 +276,15 @@ label {
 
 .category-selector--reverse {
   fill: #fff;
-  
+
 }
+
 .category-selector__text {
   margin: 0;
   padding-right: 1rem;
   font-weight: 700;
 }
+
 .category-selector__text--reverse {
   color: #fff;
 }
@@ -305,7 +321,7 @@ label {
   }
 }
 
-.categories__list>li:hover > .category {
+.categories__list>li:hover>.category {
   text-decoration: underline;
 }
 
@@ -321,13 +337,179 @@ label {
   }
 }
 
+/* css for buttons*/
+.display-toggle-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-toggle-button {
+  background-color: #fff;
+  height: 3.25rem;
+  width: 3.25rem;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+
+.display-toggle-button:first-child {
+  margin-right: 1.5rem;
+}
+
+.display-toggle-button--active {
+  border: 3px dotted #ff0000;
+}
+
+.display-toggle-button:hover,
+.display-toggle-button--active {
+  background-color: #000;
+}
+
+.display-toggle-button:hover>svg,
+.display-toggle-button--active>svg {
+  fill: #fff;
+}
+
 /* css for events divided in categories */
+.to-category-list {
+  margin: 0 0 1rem 2.5rem;
+  padding: 0.788rem 0;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+@media(min-width: 80rem) {
+  .to-category-list {
+    padding: 2.263rem 0;
+  }
+}
+
+.to-category-list>svg {
+  width: 1.375rem;
+  height: 1.375rem;
+
+}
+
 .category__title {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: calc(100% - 3rem);
+}
+
+.category__title>h2 {
+  word-wrap: break-word;
+}
+
+@media(max-width: 47.999rem) {
+  .category__title>h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 80rem) {
+  .category__title>h2 {
+    font-size: 3.75rem;
+  }
 }
 
 .events-by-category {
   margin-bottom: 2.5rem;
+}
+
+/* css for events in raster-mode */
+.event--raster {
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.categorized-event__thumbnail--invisible {
+  display: none;
+}
+
+.categorized-event__article--raster {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  padding: 1.125rem 2rem;
+}
+
+@media(min-width: 64rem) {
+  .categorized-event__article--raster {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.categorized-event__article--raster>div {
+  margin: 0;
+  padding: 0;
+
+}
+
+.categorized-event__article--raster>div>p {
+  font-size: 1.063rem;
+  font-weight: 900;
+  margin-right: 2rem;
+}
+
+.categorized-event__article--raster>h3 {
+  color: #fff;
+
+  font-size: 1.188rem;
+}
+
+.categorized-event__article--raster>p {
+  color: #fff;
+  font-size: 0.938rem;
+}
+
+@media(min-width: 48rem) {
+
+  .categorized-event__article--raster>div>p,
+  .categorized-event__article--raster>p {
+    font-size: 1.125rem;
+  }
+
+  .categorized-event__article--raster>h3 {
+    font-size: 1.375rem;
+    flex-grow: 1;
+  }
+}
+
+/* css for searchbar on the programma-page (dag.html) */
+.day__search-events {
+  background-color: #000;
+  padding: 5rem 0;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.search-events {
+  width: 47rem;
+  max-width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+@media(max-width: 47.999rem) {
+  .search-events__title {
+    font-size: 1.5rem;
+  }
+}
+
+.day-searchbar {
+  display: flex;
+}
+
+.day-searchbar__input {
+
+  width: calc(100% - 4.5rem);
+  height: 3.5rem;
+  padding: 0 1rem;
+}
+
+.day-searchbar__search-button {
+  height: 3.5rem
 }
 
 /* css for news */
