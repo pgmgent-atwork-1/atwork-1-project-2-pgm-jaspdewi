@@ -1,5 +1,3 @@
-
-
 /* header css */
 /* upper part of header */
 .background01 {
@@ -72,6 +70,7 @@
   justify-content: space-between;
   position: relative;
 }
+
 @media(min-width: 64rem) {
   .upper-header--day {
     justify-content: flex-start
@@ -86,7 +85,7 @@
 }
 
 .upper-header--day__top {
-  width:100%;
+  width: 100%;
   padding-bottom: 15vh;
   display: flex;
   align-items: flex-start;
@@ -222,12 +221,13 @@
 
 /* full menu */
 .upper-header__full-menu {
-  width: 35.5rem;
+  display: none;
 }
 
-@media(max-width: 79.999rem) {
+@media(min-width: 80rem) {
   .upper-header__full-menu {
-    display: none;
+    width: 35.5rem;
+    display: block;
   }
 }
 
@@ -326,18 +326,21 @@
   justify-content: flex-end;
   align-content: space-between;
 }
-@media(min-width: 64rem){
+
+@media(min-width: 64rem) {
   .upper-header--day__subtitle {
     width: 22.5rem;
     height: 8rem;
   }
 }
-@media(min-width: 80rem){
+
+@media(min-width: 80rem) {
   .upper-header--day__subtitle {
     width: 32.5rem;
     height: 10rem;
   }
 }
+
 .upper-header--day__svg-small {
   height: 1.625rem;
   width: 7rem;
@@ -560,4 +563,3 @@
     font-size: 1.125rem;
   }
 }
-
