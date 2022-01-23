@@ -540,7 +540,8 @@ label {
 
 /* css for event-details */
 .event-details {
-  margin: 2.75rem 0 5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 5rem;
 }
 .event-details__header > * {
 padding-bottom: 0.5rem;
