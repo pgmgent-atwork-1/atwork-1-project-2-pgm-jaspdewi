@@ -73,7 +73,7 @@
           </div>
         </section>
         <section class="event-details__main-flexbox">
-          <img class="event-details__image" src="${ev.image ? ev.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
+          <img class="event-details__image" loading="lazy" src="${ev.image ? ev.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           <article>
             ${ev.description === undefined ? '' : description}
             ${ev.url === null ? '' : website}

@@ -34,7 +34,7 @@
           <li class="news-article ">
                 <a href="news.html" class="main__links news-link">
                     <div class="news__thumbnail-container">
-                        <img class="news__thumbnail" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
+                        <img class="news__thumbnail" loading="lazy" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
                         <div class="news__date">${dayMonth}</div>
                     </div>
                     <div class="news__synopsis-container">

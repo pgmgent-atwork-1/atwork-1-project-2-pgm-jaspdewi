@@ -48,7 +48,7 @@
           <li class="event categorized-event">
           <a href="evenementen/detail.html?day=${event.day}&slug=${event.slug}" class="main__links event-link">
           <div class="event__thumbnail-container categorized-event__thumbnail">
-          <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
+          <img class="event__thumbnail" loading="lazy" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
             <article class="event__article categorized-event__article">
               <div class="event__date">

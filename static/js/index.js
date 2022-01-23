@@ -32,7 +32,7 @@
           <li class="event">
           <a href="evenementen/detail.html?day=${event.day}&slug=${event.slug}" class="main__links event-link">
           <div class="event__thumbnail-container">
-          <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
+          <img class="event__thumbnail" loading="lazy" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
             <article class="event__article">
               <div class="event__date">
@@ -67,7 +67,7 @@
           <li class="news-article ">
                 <a href="news.html" class="main__links news-link">
                     <div class="news__thumbnail-container">
-                        <img class="news__thumbnail" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
+                        <img class="news__thumbnail" loading="lazy" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
                         <div class="news__date">${dayMonth}</div>
                     </div>
                     <div class="news__synopsis-container">

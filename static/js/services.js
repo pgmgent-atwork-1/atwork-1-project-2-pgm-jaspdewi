@@ -1,7 +1,7 @@
 function GetData() {
   this.getEventData = async () => {
       try {
-        const response = await fetch(`https://www.pgm.gent/data/gentsefeesten/events_500.json`);
+        const response = await fetch(`https://www.pgm.gent/data/gentsefeesten/events.json`);
         const data = await response.json();
         data.sort((a, b) => {
           if (a.sort_key > b.sort_key) {
