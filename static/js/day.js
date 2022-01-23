@@ -49,7 +49,7 @@
           // small difference in event__date div (index.js 38 - 41, here 50 - 52)
           return `
           <li class="event">
-          <a href="" class="main__links event-link">
+          <a href="evenementen/detail.html?day=${event.day}&slug=${event.slug}" class="main__links event-link">
           <div class="event__thumbnail-container">
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
@@ -64,12 +64,12 @@
           </li>
           `
         }).join('');
-        this.$randomPreviews.innerHTML += event
+        this.$randomPreviews.innerHTML += event;
       };
 
     },
     async generateAllEventsForDay(data) {
-      console.log('4. generate list of events for selected day');
+      console.log('5. generate list of events for selected day');
 
       // get event-data, already filtered on correct day, from previous functions
       const events = data;
@@ -80,7 +80,7 @@
         const categorizedEvents = events.filter((event) => event.category[0] === cat || event.category[1] === cat).map((event) => {
           return `
           <li class="event categorized-event">
-          <a href="" class="main__links event-link">
+          <a href="evenementen/detail.html?day=${event.day}&slug=${event.slug}" class="main__links event-link">
           <div class="event__thumbnail-container categorized-event__thumbnail">
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>

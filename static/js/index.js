@@ -30,7 +30,7 @@
           // use default-img.jpg as thumbnail when none is available
           return `
           <li class="event">
-          <a href="" class="main__links event-link">
+          <a href="evenementen/detail.html?day=${event.day}&slug=${event.slug}" class="main__links event-link">
           <div class="event__thumbnail-container">
           <img class="event__thumbnail" src="${event.image ? event.image.full : "static/media/images/default-img.png"}" alt="event thumbnail">
           </div>
@@ -65,7 +65,7 @@
           let dayMonth = `${day < 10 ? "0" + day : day}/${month[date.getMonth()]}`;
           return `
           <li class="news-article ">
-                <a href="javascript:void(0)" class="main__links news-link">
+                <a href="news.html" class="main__links news-link">
                     <div class="news__thumbnail-container">
                         <img class="news__thumbnail" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
                         <div class="news__date">${dayMonth}</div>

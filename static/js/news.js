@@ -32,7 +32,7 @@
           let dayMonth = `${day < 10 ? "0" + day : day}/${month[date.getMonth()]}`;
           return `
           <li class="news-article ">
-                <a href="javascript:void(0)" class="main__links news-link">
+                <a href="news.html" class="main__links news-link">
                     <div class="news__thumbnail-container">
                         <img class="news__thumbnail" src="https://www.pgm.gent/data/gentsefeesten/${news.picture.medium}" alt="thumbnail">
                         <div class="news__date">${dayMonth}</div>
