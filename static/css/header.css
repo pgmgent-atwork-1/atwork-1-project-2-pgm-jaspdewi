@@ -278,6 +278,7 @@
   background-color: #000000;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .full-menu__links {
